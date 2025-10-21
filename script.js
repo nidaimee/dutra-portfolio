@@ -10,7 +10,7 @@ function initializeGallery() {
 
   if (!pages.length || !prevBtn || !nextBtn) {
     console.log('Elementos da galeria não encontrados, tentando novamente...');
-    setTimeout(initializeGallery, 100);
+    setTimeout(initializeGallery, 800);
     return;
   }
 

@@ -811,32 +811,43 @@ body {
     bottom: 20px;
     right: 20px;
   }
-  .gallery-section, .contato {
+  .gallery-section {
+    padding: 60px 10px;
+    margin: 0;
+  }
+  
+  .contato {
     margin: 10px;
   }
   
   .gallery-container {
     height: auto;
-    min-height: 400px;
+    min-height: 550px;
   }
   
   .transformation-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 10px;
+    padding: 20px 15px;
+  }
+  
+  .transformation-item {
+    aspect-ratio: 3/4;
+    max-height: 320px;
   }
   
   .gallery-prev, .gallery-next {
-    padding: 12px 15px;
-    font-size: 1.4rem;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    top: 40%;
   }
   
   .gallery-prev { 
-    left: 10px; 
+    left: 5px; 
   }
   
   .gallery-next { 
-    right: 10px; 
+    right: 5px; 
   }
 
   /* Estratégia responsiva */
@@ -889,13 +900,31 @@ body {
       rgba(0, 0, 0, 0.8) 80%,
       transparent 100%
     );
+    padding: 10px 12px 8px;
   }
   
   .transformation-info h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
   }
   
   .transformation-info p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .more-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .more-content p {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  
+  .btn-more {
+    padding: 8px 16px;
     font-size: 0.85rem;
   }
   
