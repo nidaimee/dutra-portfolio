@@ -273,3 +273,113 @@
 </html>
 
 
+<style>
+  /* RESET E ESTILO DA NOVA SEÇÃO */
+.especialista-final {
+    padding: 80px 0;
+    background-color: #050505 !important; /* Força o fundo preto */
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif; /* Ou a fonte que seu site usa */
+}
+
+.esp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.esp-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Garante que quebre no celular */
+}
+
+.esp-image-box {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.esp-image-box img {
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 5px solid #ff6a00; /* Linha laranja do seu branding */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.esp-badge {
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    background: #ff6a00;
+    color: #000;
+    padding: 8px 15px;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.esp-text-box {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.esp-tag {
+    color: #ff6a00;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.esp-text-box h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.esp-orange {
+    color: #ff6a00;
+}
+
+.esp-text-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.esp-list {
+    list-style: none;
+    padding: 0;
+}
+
+.esp-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    font-weight: 600;
+}
+
+.esp-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #ff6a00;
+    font-weight: 900;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .esp-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .esp-list li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+</style>
