@@ -958,3 +958,112 @@ body {
     height: 45px;
   }
 }
+
+.especialista {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0d1b2a 100%); /* Fundo azul escuro profundo */
+    color: #fff;
+    overflow: hidden;
+}
+
+.especialista-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.especialista-img {
+    flex: 1;
+    position: relative;
+}
+
+.especialista-img img {
+    width: 100%;
+    border-radius: 15px;
+    filter: grayscale(30%);
+    border-left: 4px solid #ff6a00; /* Detalhe em Laranja */
+}
+
+.badge-atleta {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #ff6a00;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.especialista-conteudo {
+    flex: 1.2;
+}
+
+.especialista-conteudo .subtitle {
+    color: #ff6a00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.especialista-conteudo h2 {
+    font-size: 2.5rem;
+    margin: 15px 0 25px;
+    line-height: 1.2;
+}
+
+.especialista-conteudo .highlight {
+    color: #ff6a00;
+}
+
+.especialista-conteudo p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.differentials {
+    margin-top: 30px;
+}
+
+.diff-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.diff-item svg {
+    color: #ff6a00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .especialista-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .especialista-img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .badge-atleta {
+        right: 0;
+        left: 0;
+        width: max-content;
+        margin: 0 auto;
+    }
+    .diff-item {
+        justify-content: center;
+    }
+}
