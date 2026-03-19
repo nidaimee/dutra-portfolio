@@ -64,11 +64,9 @@ body {
 .image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 102, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(45deg,
+      rgba(255, 102, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 100%);
   pointer-events: none;
 }
 
@@ -121,7 +119,7 @@ body {
   letter-spacing: 2px;
 }
 
-.hero-content > p {
+.hero-content>p {
   color: #ff8800;
   font-size: 1.4rem;
   margin-bottom: 30px;
@@ -273,12 +271,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.7) 70%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.7) 70%,
+      transparent 100%);
   padding: 20px 15px 15px;
   color: white;
   transform: translateY(100%);
@@ -360,7 +356,8 @@ body {
   box-shadow: 0 8px 25px rgba(255, 102, 0, 0.5);
 }
 
-.gallery-prev, .gallery-next {
+.gallery-prev,
+.gallery-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -377,17 +374,18 @@ body {
   font-weight: bold;
 }
 
-.gallery-prev:hover, .gallery-next:hover {
+.gallery-prev:hover,
+.gallery-next:hover {
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 12px 30px rgba(255, 102, 0, 0.5);
 }
 
-.gallery-prev { 
-  left: -70px; 
+.gallery-prev {
+  left: -70px;
 }
 
-.gallery-next { 
-  right: -70px; 
+.gallery-next {
+  right: -70px;
 }
 
 .gallery-indicators {
@@ -443,8 +441,15 @@ body {
 }
 
 @keyframes zoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .close {
@@ -693,16 +698,19 @@ body {
   0% {
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.7);
   }
+
   70% {
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0);
   }
+
   100% {
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
 
 /* EFEITOS DE GLOW */
-.carousel-section h2, .contato h2 {
+.carousel-section h2,
+.contato h2 {
   color: #ff6600;
   text-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
   font-weight: 600;
@@ -718,18 +726,21 @@ body {
   border-color: #ff6600;
 }
 
-.prev, .next {
+.prev,
+.next {
   background: linear-gradient(135deg, #ff6600, #ff8800);
   box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   box-shadow: 0 8px 25px rgba(255, 102, 0, 0.5);
   transform: translateY(-50%) scale(1.1);
 }
 
 /* CARDS COM SOMBRAS SUAVES */
-.carousel-section, .contato {
+.carousel-section,
+.contato {
   background: rgba(26, 26, 26, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -745,12 +756,12 @@ body {
     gap: 18px;
     padding: 15px;
   }
-  
+
   .estrategia-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .estrategia-section .section-header h2 {
     font-size: 2.2rem;
   }
@@ -762,12 +773,12 @@ body {
     grid-template-rows: 60vh 1fr;
     gap: 0;
   }
-  
+
   .hero-image {
     height: 60vh;
     order: 1;
   }
-  
+
   .hero-content {
     height: auto;
     padding: 60px 30px;
@@ -779,7 +790,7 @@ body {
     border-left: none;
     border-top: 3px solid rgba(255, 102, 0, 0.3);
   }
-  
+
   .hero-content::before {
     left: 0;
     top: -3px;
@@ -788,87 +799,91 @@ body {
     background: linear-gradient(to right, #ff6600, #ff8800);
     animation: fillLineHorizontal 2s ease-out 1.5s forwards;
   }
-  
-  .hero h1 { 
+
+  .hero h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
   }
-  
-  .hero-content > p {
+
+  .hero-content>p {
     font-size: 1.1rem;
     letter-spacing: 2px;
   }
-  
+
   .hero-description p {
     font-size: 1.1rem;
   }
-  .carousel-img { 
-    width: 90%; 
+
+  .carousel-img {
+    width: 90%;
   }
+
   .whatsapp-float {
     width: 50px;
     height: 50px;
     bottom: 20px;
     right: 20px;
   }
+
   .gallery-section {
     padding: 60px 10px;
     margin: 0;
   }
-  
+
   .contato {
     margin: 10px;
   }
-  
+
   .gallery-container {
     height: auto;
     min-height: 550px;
   }
-  
+
   .transformation-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px 15px;
   }
-  
+
   .transformation-item {
     aspect-ratio: 3/4;
     max-height: 320px;
   }
-  
-  .gallery-prev, .gallery-next {
+
+  .gallery-prev,
+  .gallery-next {
     padding: 10px 12px;
     font-size: 1.2rem;
     top: 40%;
   }
-  
-  .gallery-prev { 
-    left: 5px; 
+
+  .gallery-prev {
+    left: 5px;
   }
-  
-  .gallery-next { 
-    right: 5px; 
+
+  .gallery-next {
+    right: 5px;
   }
 
   /* Estratégia responsiva */
   .estrategia-section {
     padding: 60px 20px;
   }
-  
+
   .estrategia-section .section-header h2 {
     font-size: 2rem;
     margin-bottom: 40px;
   }
-  
+
   .estrategia-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .estrategia-card {
     padding: 30px 20px;
   }
-  
+
   .card-icon {
     width: 60px;
     height: 60px;
@@ -877,84 +892,199 @@ body {
   .gallery-section h2 {
     font-size: 1.8rem;
   }
-  
+
   .more-content h3 {
     font-size: 1.5rem;
   }
-  
+
   .section-header h2 {
     font-size: 2rem;
     letter-spacing: 1px;
   }
-  
+
   .section-header p {
     font-size: 1rem;
     padding: 0 20px;
   }
-  
+
   .transformation-info {
     transform: translateY(0);
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(0, 0, 0, 0.8) 80%,
-      transparent 100%
-    );
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.8) 80%,
+        transparent 100%);
     padding: 10px 12px 8px;
   }
-  
+
   .transformation-info h4 {
     font-size: 0.9rem;
     margin-bottom: 4px;
   }
-  
+
   .transformation-info p {
     font-size: 0.8rem;
     font-weight: 500;
   }
-  
+
   .more-content h3 {
     font-size: 1.2rem;
     margin-bottom: 8px;
   }
-  
+
   .more-content p {
     font-size: 0.85rem;
     margin-bottom: 15px;
   }
-  
+
   .btn-more {
     padding: 8px 16px;
     font-size: 0.85rem;
   }
-  
+
   .contato {
     padding: 80px 20px;
   }
-  
+
   .contato h2 {
     font-size: 2rem;
     margin-bottom: 30px;
   }
-  
+
   .contato p {
     font-size: 1.1rem;
     margin-bottom: 40px;
     padding: 0 10px;
   }
-  
+
   .footer {
     padding: 40px 15px 20px;
   }
+
   .footer-slogan h3 {
     font-size: 1.2rem;
     line-height: 1.4;
   }
+
   .footer-social {
     gap: 15px;
   }
+
   .social-link {
     width: 45px;
     height: 45px;
+  }
+
+  /* RESET E ESTILO DA NOVA SEÇÃO */
+  .especialista-final {
+    padding: 80px 0;
+    background-color: #050505 !important;
+    /* Força o fundo preto */
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif;
+    /* Ou a fonte que seu site usa */
+  }
+
+  .esp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .esp-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* Garante que quebre no celular */
+  }
+
+  .esp-image-box {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .esp-image-box img {
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 5px solid #ff6a00;
+    /* Linha laranja do seu branding */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .esp-badge {
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    background: #ff6a00;
+    color: #000;
+    padding: 8px 15px;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+  .esp-text-box {
+    flex: 1.5;
+    min-width: 300px;
+  }
+
+  .esp-tag {
+    color: #ff6a00;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .esp-text-box h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    line-height: 1.1;
+  }
+
+  .esp-orange {
+    color: #ff6a00;
+  }
+
+  .esp-text-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+  }
+
+  .esp-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .esp-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .esp-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #ff6a00;
+    font-weight: 900;
+  }
+
+  /* RESPONSIVIDADE */
+  @media (max-width: 768px) {
+    .esp-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .esp-list li {
+      display: inline-block;
+      margin: 10px;
+    }
   }
 }
